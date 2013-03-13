@@ -26,7 +26,9 @@
 			<input type="text" id="query" name="query" size="30" />
 			<button type="button" id="search" name="search">検索</button>
 			<hr/>
-			<div id="result" name="result"></div>
+			<div id="result" name="result">
+				<ul></ul>
+			</div>
 		</section>
 
 		<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.4/require.min.js"></script>
@@ -37,8 +39,9 @@
 		<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/0.9.10/backbone-min.js"></script>
 
 		<script src="js/plugins.js"></script>
-		<script src="js/models/app.js"></script>
-		<script src="js/collections/app.js"></script>
+		<script src="js/models/word.js"></script>
+		<script src="js/collections/words.js"></script>
+		<script src="js/views/word.js"></script>
 		<script src="js/views/app.js"></script>
 		<script src="js/main.js"></script>
 
