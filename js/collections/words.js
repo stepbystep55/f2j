@@ -1,8 +1,10 @@
-var app = app || {};
-
-$(function($){
+define(["underscore", "backbone", "models/word"], function(_, Backbone, Word){
 	'use strict';
-	app.Words = Backbone.Collection.extend({
-		model: Word
+
+	var Words = Backbone.Collection.extend({
+		model: Word.Word
 	});  
+	return {
+         "Words": Words,
+     };
 });

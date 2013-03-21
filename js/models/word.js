@@ -1,11 +1,13 @@
-var app = app || {};
-
-$(function($){
+define(["underscore", "backbone"], function(_, Backbone){
 	'use strict';
-	app.Word = Backbone.Model.extend({
+
+	var Word = Backbone.Model.extend({
 		defaults: {
 	    	jap: 'こんにちは',
 	    	fra: 'bonjours'
 		}
 	});  
+	return {
+         "Word": Word,
+     };
 });
