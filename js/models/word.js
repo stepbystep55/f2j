@@ -8,6 +8,7 @@ define(["underscore", "backbone"], function(_, Backbone){
 		}
 	});  
 	return {
-         "Word": Word,
+         "Word": Word
      };
 });
+	
